@@ -1,0 +1,218 @@
+<?php
+/*
+
+		Автор: FlipFlare ( https://vk.com/iv.trufanov )
+	
+		По любым вопросам обращайтесь к автору данного кода https://vk.com/iv.trufanov
+*/
+error_reporting( E_ERROR );
+
+///////////////////////////
+///         CORE        ///
+///////////////////////////
+$core = array(
+    "api_key"=> "BcToX3sbwlTNyBkcHB9Yqb0rpQdiSVH58iko", //Ключ для скрипта авторизации
+);
+$mysql = array(
+    "db"=>"bd_site", //Имя бд
+    "host"=>"144.76.36.221", //Адресс бд
+    "user" => "bd_site", //Юзер бд
+    "pass" => "Fjh34398h9wehuwefwe" //Пороль бд
+);
+$curs = array(
+    "coins"=>"1000",//Сколько коинов стоит одна монета (рубль)
+	"start_coins"=>"10000" //Начально е кол-во коинов
+);
+$unban_data = array(
+    "cost"=>"50", //Первоначальная цена разбана
+	"cost_plus"=>"50" //+ к последующим ценам
+);
+$perms = array( 
+    "skin"=>"64", //Разрешение обычного скина
+    "cloak"=>"64", //Разрешение обычного плаща
+    "hd_skin" => "1024", //Разрешение HD скина
+    "hd_cloak" => "1024" //Разрешение HD плаща
+);
+
+///////////////////////////
+///       ПЕРИОДЫ       ///
+///////////////////////////
+$periods = array( //Периоды на которые можно брать привелегию
+  array(
+   "title" => "30 ДНЕЙ", //Имя
+   "id" => 1, //ID
+   "time" => 30, //Время в днях
+   "costx" => 1, //Скидка
+  ),
+  array(
+   "title" => "60 ДНЕЙ", 
+   "id" => 2,
+   "time" => 60, 
+   "costx" => 0.8, //Скидка 20%
+  ),
+  array(
+   "title" => "90 ДНЕЙ",
+   "id" => 3,   
+   "time" => 90, 
+   "costx" => 0.7, 
+  ),
+  array(
+   "title" => "НАВСЕГДА", 
+   "id" => 4,
+   "time" => -1, 
+   "costx" => 1, 
+  ),
+);
+///////////////////////////
+///        СЕРВЕРА      ///
+///////////////////////////
+$servers = array( //Сервера
+ "DivineRPG" => array (
+   "title" => "DivineRPG", //Имя сервера
+   "db_host" => $mysql['host'], //БД ХОСТЬ
+   "db_user" => $mysql['user'], //БД ЮЗЕР
+   "db_pass" => $mysql['pass'], //БД ПАССВОРД
+   "db_base" => "DivineRPG", //ИМЯ БД
+   "rcon_host" => "glymi.beget.tech", //РКОН ХОСТ
+   "rcon_port" => 20001, //РКОН ПОРТ
+   "rcon_password" => "B1JqGYghFkBv7i88", //РКОН ПОРОЛЬ
+   "rcon_timeout" => 3, //НЕ ТРОГАТЬ
+  ),
+ "GregTech" => array (
+   "title" => "GregTech", //Имя сервера
+   "db_host" => $mysql['host'], //БД ХОСТЬ
+   "db_user" => $mysql['user'], //БД ЮЗЕР
+   "db_pass" => $mysql['pass'], //БД ПАССВОРД
+   "db_base" => "GregTech", //ИМЯ БД
+   "rcon_host" => "glymi.beget.tech", //РКОН ХОСТ
+   "rcon_port" => 20002, //РКОН ПОРТ
+   "rcon_password" => "B1JqGYghFkBv7i88", //РКОН ПОРОЛЬ
+   "rcon_timeout" => 3, //НЕ ТРОГАТЬ
+  ),
+ "Hitech" => array (
+   "title" => "Hitech", //Имя сервера
+   "db_host" => $mysql['host'], //БД ХОСТЬ
+   "db_user" => $mysql['user'], //БД ЮЗЕР
+   "db_pass" => $mysql['pass'], //БД ПАССВОРД
+   "db_base" => "Hitech", //ИМЯ БД
+   "rcon_host" => "glymi.beget.tech", //РКОН ХОСТ
+   "rcon_port" => 20003, //РКОН ПОРТ
+   "rcon_password" => "B1JqGYghFkBv7i88", //РКОН ПОРОЛЬ
+   "rcon_timeout" => 3, //НЕ ТРОГАТЬ
+  ),
+  "Magic" => array (
+   "title" => "Magic", //Имя сервера
+   "db_host" => $mysql['host'], //БД ХОСТЬ
+   "db_user" => $mysql['user'], //БД ЮЗЕР
+   "db_pass" => $mysql['pass'], //БД ПАССВОРД
+   "db_base" => "Magic", //ИМЯ БД
+   "rcon_host" => "glymi.beget.tech", //РКОН ХОСТ
+   "rcon_port" => 20008, //РКОН ПОРТ
+   "rcon_password" => "Gtrh56yrtrthdsf", //РКОН ПОРОЛЬ
+   "rcon_timeout" => 3, //НЕ ТРОГАТЬ
+  ),
+  "TechnoMagicRPG" => array (
+   "title" => "TechnoMagicRPG", //Имя сервера
+   "db_host" => $mysql['host'], //БД ХОСТЬ
+   "db_user" => $mysql['user'], //БД ЮЗЕР
+   "db_pass" => $mysql['pass'], //БД ПАССВОРД
+   "db_base" => "TechnoMagicRPG", //ИМЯ БД
+   "rcon_host" => "glymi.beget.tech", //РКОН ХОСТ
+   "rcon_port" => 20005, //РКОН ПОРТ
+   "rcon_password" => "B1JqGYghFkBv7i88", //РКОН ПОРОЛЬ
+   "rcon_timeout" => 3, //НЕ ТРОГАТЬ
+  )
+);
+///////////////////////////
+///        ДОНАТЫ       ///
+///////////////////////////
+$donates = array(//Донаты
+	"vip" => array (
+	 "title" => "VIP", //Название доната
+	 "pex" => "vip", //Имя в плагине (Pex)
+	 "cost" => 130, //Цена
+	 "price" => 0, //Скидка
+	 "cloak"=> true, //Можно ли ставить плащ
+	 "hd_skin" => false, //Можно ли ставить HD скин
+	 "hd_cloak" => false //Можно ли ставить HD плащ
+	),
+	"premium" => array (
+	 "title" => "Premium", 
+	 "pex" => "premium", 
+	 "cost" => 250,
+	 "price" => 0, 
+	 "cloak"=> true, 
+	 "hd_skin" => false, 
+	 "hd_cloak" => false 
+	),
+	"deluxe" => array (
+	 "title" => "Deluxe", 
+	 "pex" => "deluxe", 
+	 "cost" => 550,
+	 "price" => 0, 
+	 "cloak"=> true, 
+	 "hd_skin" => true, 
+	 "hd_cloak" => true 
+	),
+	"legenda" => array (
+	 "title" => "Legenda", 
+	 "pex" => "legenda", 
+	 "cost" => 950,
+	 "price" => 0,
+	 "cloak"=> true, 
+	 "hd_skin" => true, 
+	 "hd_cloak" => true 
+	)
+);
+///////////////////////////
+///        КЕЙСЫ        ///
+///////////////////////////
+$everyday_case_name = "Ежедневный"; //Имя ежедневного кейса
+$case_coins_dableprice = 1200; //Результат произведение этого числа и цены = цена кейса в коинах
+$cases = array(
+    "SpaceWay" => array (
+        "everyday" => array (
+        "title" => "Ежедневный", //Имя кейса
+        "name" => "everyday", //Название кейса в плагине
+        "cost" => 2, //Цена в рублях
+        "img" => "everyday.png", //Картинка кейса
+        "img_kit"=> "everyday_kit.png"
+		),
+		"dirt" => array (
+        "title" => "Обыкновенный", 
+        "name" => "dirt", 
+        "cost" => 7, 
+        "img" => "dirt.png",
+        "img_kit"=> "dirt.png"
+		),
+		"advent" => array (
+        "title" => "Кристальный", 
+        "name" => "advent", 
+        "cost" => 12, 
+        "img" => "advent.png",
+        "img_kit"=> "advent_kit.png"
+		),
+		"nano" => array (
+        "title" => "Изумрудный", 
+        "name" => "nano", 
+        "cost" => 25, 
+        "img" => "nano.png",
+        "img_kit"=> "nano_kit.png"
+		),
+		"space" => array (
+        "title" => "Космический", 
+        "name" => "space", 
+        "cost" => 59, 
+        "img" => "space.png",
+        "img_kit"=> "space_kit.png"
+		),
+		"quant" => array (
+        "title" => "СОКРОВИЩНИЦА", 
+        "name" => "quant", 
+        "cost" => 95, 
+        "img" => "quant.png",
+        "img_kit"=> "quant_kit.png"
+		)
+    )
+);
+?>

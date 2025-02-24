@@ -1,0 +1,15 @@
+{
+    "1": {
+        "method": "update",
+        "params": [
+            "core_login_methods",
+            {
+                "login_classname": "IPS\\vkcom\\Login\\Handler\\OAuth2\\VKontakte"
+            },
+            [
+                "login_classname=?",
+                "IPS\\Login\\Handler\\OAuth2\\VKontakte"
+            ]
+        ]
+    }
+}

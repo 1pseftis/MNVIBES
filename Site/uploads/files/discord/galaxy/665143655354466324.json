@@ -1,0 +1,26 @@
+{
+  "mainMenu": {
+    "state": "В главном меню (Galaxy)",
+    "largeImageText": "Главное Меню"
+  },
+  "loadingGame": {
+    "state": "Загружает клиент",
+    "largeImageText": "FlareWorld.Ru",
+    "details": "Сервер: Galaxy"
+  },
+  "inGame": {
+    "multiPlayer": {
+      "largeImageText": {
+        "unknown": "Galaxy",
+        "ip": "Galaxy"
+      },
+      "state": "Сервер: Galaxy",
+      "details": "Ник: %s"
+    },
+    "singlePlayer": {
+      "state": "Одиночная игра",
+      "largeImageText": "Сервер: Galaxy",
+      "details": "Одиночная игра"
+    }
+  }
+}

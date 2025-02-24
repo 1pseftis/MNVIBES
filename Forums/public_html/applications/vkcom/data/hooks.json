@@ -1,0 +1,14 @@
+{
+    "ipsLoginHandler": {
+        "type": "C",
+        "class": "\\IPS\\Login\\Handler"
+    },
+    "themeCoreAdminApplications": {
+        "type": "S",
+        "class": "\\IPS\\Theme\\class_core_admin_applications"
+    },
+    "ipsCoreMdAdSettingsLogin": {
+        "type": "C",
+        "class": "\\IPS\\core\\modules\\admin\\settings\\login"
+    }
+}

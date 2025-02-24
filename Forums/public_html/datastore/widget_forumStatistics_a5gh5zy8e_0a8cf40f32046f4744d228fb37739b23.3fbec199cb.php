@@ -1,0 +1,5 @@
+<?php
+
+return <<<'VALUE'
+{"built":1608515930,"html":"\n<h3 class='ipsType_reset ipsWidget_title'>\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0430 \u0444\u043e\u0440\u0443\u043c\u0430<\/h3>\n<div class='ipsWidget_inner'>\n\t\n\t\t<div class='ipsPad_half'>\n\t\t\t<ul class='ipsDataList'>\n\t\t\t\t<li class='ipsDataItem'>\n\t\t\t\t\t<div class='ipsDataItem_main ipsPos_middle'>\n\t\t\t\t\t\t<strong>\u0412\u0441\u0435\u0433\u043e \u0442\u0435\u043c<\/strong>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div class='ipsDataItem_stats ipsDataItem_statsLarge'>\n\t\t\t\t\t\t<span class='ipsDataItem_stats_number'>9<\/span>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/li>\n\t\t\t\t<li class='ipsDataItem'>\n\t\t\t\t\t<div class='ipsDataItem_main ipsPos_middle'>\n\t\t\t\t\t\t<strong>\u0412\u0441\u0435\u0433\u043e \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0439<\/strong>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div class='ipsDataItem_stats ipsDataItem_statsLarge'>\n\t\t\t\t\t\t<span class='ipsDataItem_stats_number'>15<\/span>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/li>\n\t\t\t<\/ul>\n\t\t<\/div>\n\t\n<\/div>"}
+VALUE;

@@ -1,0 +1,40 @@
+.sale-block {
+
+    border: 8px solid #ffffff;
+    border-radius: 3px;
+    display: inline-block;
+	width: 90%;
+
+}
+.sale-block h3 {
+
+    line-height: 1;
+    padding: 10px 15px;
+    margin: 5px;
+    background: linear-gradient(61deg,#2e3356,#35D59D);
+    font-size: 20px;
+    color: #f9f7f6;
+    font-family: 'Days One', sans-serif;
+    transform: rotate(-2deg);
+
+}
+.sale-block_2 {
+
+    border: 8px solid #ffffff;
+    border-radius: 3px;
+    display: inline-block;
+	width: 90%;
+
+}
+.sale-block_2 h3 {
+
+    line-height: 1;
+    padding: 10px 15px;
+    margin: 5px;
+    background: linear-gradient(61deg,#2e3356,#35D59D);
+    font-size: 15px;
+    color: #f9f7f6;
+    font-family: 'Days One', sans-serif;
+    transform: rotate(-2deg);
+
+}

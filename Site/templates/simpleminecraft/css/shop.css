@@ -1,0 +1,82 @@
+.kits__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 31px;
+}
+
+.kit__block {
+    display: block;
+    position: relative;
+    background: #301f38;
+    padding: 0 0 25px;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    text-decoration: none;
+    text-align: center;
+    width: 210px;
+    margin-right: 20px;
+    overflow: hidden;
+    height: 280px;
+    transition: 0.2s background-position linear;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 0 54px;
+}
+
+.kit__block:last-child {
+    margin-right: 0px;
+}
+
+.kit__bui {
+    display: block;
+    font-size: 16px;
+    background: #7328a9;
+    border-bottom: 3px solid #541d7e;
+    color: #ffffff;
+    font-family: 'FSElliotPro-Heavy';
+    text-transform: uppercase;
+    padding: 14px;
+    margin: 72px 0 0 30px;
+    width: 125px;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s opacity linear;
+    -webkit-box-shadow: 0 8px 23px rgba(84, 29, 126, .82);
+    -moz-box-shadow: 0 8px 23px rgba(84, 29, 126, .82);
+    box-shadow: 0 8px 23px rgba(84, 29, 126, .82);
+}
+
+.kit__block:hover .kit__bui {
+    opacity: 1;
+}
+
+.kit__block:hover {
+    background-position: -20px 54px;
+}
+
+.kit__info {
+    text-transform: uppercase;
+    font-family: "FSElliotPro-Heavy";
+    color: #c06b7b;
+    font-size: 28px;
+    text-align: left;
+    padding: 24px 0 22px 22px;
+    background: rgba(21, 16, 26, 0.7);
+    -webkit-box-shadow: 0 4px 27px rgba(79, 45, 31, .17);
+    -moz-box-shadow: 0 4px 27px rgba(79, 45, 31, .17);
+    box-shadow: 0 4px 27px rgba(79, 45, 31, .17);
+}
+
+.kit__info span {
+    display: block;
+    font-size: 14px;
+    font-family: "FSElliotPro-Bold";
+    padding: 2px 0 0 0;
+}
+
+.kit__label {
+    color: #cbc4c3;
+    font-size: 16px;
+    font-family: 'FSElliotPro-Bold';
+    margin-bottom: 8px;
+}

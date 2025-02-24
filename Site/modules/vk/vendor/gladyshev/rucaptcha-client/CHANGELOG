@@ -1,0 +1,31 @@
+1.3.3 - Report Good method
+      - Report Bad method
+      - php 7.2 and 7.3 testing enabled
+
+1.3.2 - ReCaptcha V3 suport
+      - Codestyle fixes
+
+1.3.0 - Keycaptcha support
+      - Refactoring getCaptchaResult for json response
+
+1.2.1 - Improve logger psr-3 support
+
+1.2.0 - Add RecapthcaV2 methods
+
+1.1.0 - Rename RucaptchaException to Exception
+      - Resolve account limit codes on error response
+      - Simplify error messages
+
+1.0.6 - Add addPingback method
+      - Add getPingbacks method
+      - Add deletePingback method
+      - Add deleteAllPingbacks method
+      - Pingback examples
+      - ErrorResponseException
+
+1.0.5 - Add getLoad method example
+      - Add getCaptchaResultWithCost method
+      - Add codesniffer and fix codestyle
+      - Start changelog
+      - Update phpunit to 5.7
+      - Travis php-5.5 testing off

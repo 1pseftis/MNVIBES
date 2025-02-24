@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="vkcom" version="30000">
+  <word key="__app_vkcom" js="0">VK.com Login Handler</word>
+  <word key="login_handler_VKontakte" js="0">VKontakte</word>
+  <word key="login_real_name_vkontakte" js="0">VKontakte profile name</word>
+  <word key="login_handler_VKontakte_info" js="0"><![CDATA[Follow the <a href='https://link.adles.co/docs/vk_com/setup' target='_blank'>VKontakte Login</a> guide to obtain these details. The Redirect URI to use is <code>{internal.interface.oauth/callback/}</code>]]></word>
+  <word key="login_vkontakte_app" js="0">Application ID</word>
+  <word key="login_vkontakte_secret" js="0">Secure key</word>
+  <word key="login_vkontakte_allow_status_import" js="0">Allow Status Imports?</word>
+  <word key="login_vkontakte_allow_status_import_desc" js="0">If enabled, users will be able to import their status updates from VKontakte into the community.</word>
+  <word key="login_vkontakte" js="0">Sign in with VKontakte</word>
+  <word key="login_vkontakte_upgrade" js="0"><![CDATA[<div class='ipsMessage ipsMessage_info'><h4 class='ipsMessage_title'>Conversion to the OAuth 2.0</h4><div class='ipsType_normal ipsType_reset'><a href='%s'>Click here</a> in order to convert old accounts on your community, if you have not do so. <a href='https://link.adles.co/docs/vk_com/convert' target='_blank'>Read more</a>.</div></div>]]></word>
+  <word key="login_vkontakte_upgrade_progress" js="0">Converting accounts (Converted so far: %s out of %s)</word>
+ </app>
+</language>

@@ -1,0 +1,24 @@
+<?php
+require_once ($_SERVER['DOCUMENT_ROOT']. '/modules/config/cfg_lib.php');
+require_once ($_SERVER['DOCUMENT_ROOT']. '/modules/libs/mysql.php');
+$nick = $_GET['username'];
+$secret = 'e1c8c9a2ca8958d7667dfc777cbdce66';
+
+$sign = $_GET['sign'];
+unset($_GET['sign']);
+
+if ($sign !== md5(implode('', $_GET) . $secret)) die('3');
+@file_get_contents('http://mctop.pro/api/projects/checkcall?sign=' . $sign) == 'y' ? : die('5');
+
+$econs =  $mysqli->query("select econs from dle_users where name='".$nick."'")->fetch_object()->econs;
+$cases_1 =  $mysqli->query("select cases from dle_users where name='".$nick."'")->fetch_object()->cases;
+$votes =  $mysqli->query("select votes from dle_users where name='".$nick."'")->fetch_object()->votes;
+
+
+  $newecons = $econs + 8000; 
+  $newcases = $cases_1 + 1;
+  $newvotes = $votes + 1;			
+  $mysqli->query("UPDATE dle_users SET `votes`='$newvotes' WHERE name='".$nick."'");
+  $mysqli->query("UPDATE dle_users SET `votes_time`='".time()."' WHERE name='".$nick."'");
+  $mysqli->query("UPDATE dle_users SET `econs`='$newecons' WHERE name='".$nick."'");
+  $mysqli->query("UPDATE dle_users SET `cases`='$newcases' WHERE name='".$nick."'");

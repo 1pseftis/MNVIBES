@@ -1,0 +1,175 @@
+.banlist {
+	font-family: tahoma;
+	font-size: 12px;
+	color: #404040;
+}
+
+.banlist button {
+	padding: 8px 13px 8px 13px;
+	background-color: #DFDFDF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#DFDFDF));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #DFDFDF);
+    background-image:    -moz-linear-gradient(top, #f5f5f5, #DFDFDF);
+    background-image:     -ms-linear-gradient(top, #f5f5f5, #DFDFDF);
+    background-image:      -o-linear-gradient(top, #f5f5f5, #DFDFDF); 
+    background-image:         linear-gradient(top, #f5f5f5, #DFDFDF);
+	color: #2C2C2C;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	outline: 0;
+	cursor: pointer;
+}
+
+.banlist button:hover {
+	background: #F8F8F8;
+}
+
+.banlist a {
+	color: #60ACEF;
+	text-decoration: none;
+}
+
+.banlist a:hover {
+	color: #3F91D9;
+}
+
+#banlist-alert {
+	border: 1px #7ABDD5 dashed;
+	background: #E5FAFF;
+	padding: 7px;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	cursor: default;
+}
+
+#banlist-table {
+    text-align: center;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#banlist-table thead th {
+	text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+    border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+#banlist-table thead th, #banlist-table tfoot td {
+    background-color: #DFDFDF;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#DFDFDF));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #DFDFDF);
+    background-image:    -moz-linear-gradient(top, #f5f5f5, #DFDFDF);
+    background-image:     -ms-linear-gradient(top, #f5f5f5, #DFDFDF);
+    background-image:      -o-linear-gradient(top, #f5f5f5, #DFDFDF); 
+    background-image:         linear-gradient(top, #f5f5f5, #DFDFDF);
+}
+
+#banlist-table thead th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;  
+}
+
+
+#banlist-table thead th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+#banlist-table tfoot td {
+    border-top: 1px solid #8B8B8B;
+	height: 10px;
+}
+
+#banlist-table tfoot td {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 6px 6px;
+}
+
+.banlist-rowSelected {
+	background: #F8F7BF !important;
+}
+
+.banlist-sort-asc {
+	background: #DCDCDC !important;
+}
+
+.banlist-sort-desc {
+	background: #D1D1D1 !important;
+}
+
+#banlist-table thead th, #banlist-table td {
+	padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#banlist-table tr:nth-child(2n + 1) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+}
+
+#banlist-table tr:nth-child(2n) {
+	background: #FDFDFD;
+}
+
+.banlist-pageNav {
+	padding: 5px;
+}
+
+.banlist-pageNav-fixed {
+	position: fixed;
+	z-index: 999;
+	bottom: 10px;
+}
+
+#banlist-pageNav-firstButton {
+	margin-right: 10px;
+}
+
+#banlist-pageNav-lastButton {
+	margin-left: 10px;
+}
+
+.banlist-button-selected {
+	background: #DADADA !important;
+}
+
+.banlist-search {
+	padding: 5px;
+}
+
+.banlist-search input {
+	width: 60%;
+	height: 20px;
+	padding: 3px;
+	border: 1px solid #CFCFCF;
+	border-radius: 5px;
+	font-size: 15px;
+	outline: 0;
+}
+
+.banlist-search input:focus {
+	border-color: #91C4DD;
+	transition-property: border-color;
+	transition-duration: 350ms;
+	transition-timing-function: linear;
+}
+
+.banlist-selectors {
+	padding: 5px;
+}
+
+.banlist-topselector {
+	float: right;
+}
+
+.banlist-as_futureTime-forever {
+	color: #DE5F5F;
+}
